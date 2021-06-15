@@ -14,7 +14,7 @@ describe('Engineer', () => {
 
     describe('getName', () => {
         it("Engineer's Name", () => {
-            const engineer = new Engineer("John Wick", 3, "john.wick@hub.com");
+            const engineer = new Engineer("John Wick", 3, "john.wick@hub.com", "gitjohnwick");
             
             expect(engineer.getName()).toEqual("John Wick");
         })
@@ -22,19 +22,28 @@ describe('Engineer', () => {
 
     describe('getId', () => {
         it("ID Number", () => {
-            const engineer = new Engineer("John Wick", 3, "john.wick@hub.com");
+            const engineer = new Engineer("John Wick", 3, "john.wick@hub.com", "gitjohnwick");
 
             expect(engineer.getId()).toEqual(3);
         })
     })
 
     describe('getEmail', () => {
-        it("Employe's Email", () => {
-            const engineer = new Engineer("John Wick", 3, "john.wick@hub.com");
+        it("Engineer's Email", () => {
+            const engineer = new Engineer("John Wick", 3, "john.wick@hub.com", "gitjohnwick");
             
             expect(engineer.getEmail()).toEqual("john.wick@hub.com");
         })
     })
+
+    describe('getGithub', () => {
+        it("Engineer's github", () => {
+            const engineer = new Engineer("John Wick", 3, "john.wick@hub.com", "gitjohnwick");
+
+            expect(engineer.getGithub()).toEqual('gitjohnwick');
+        })
+    })
+    
     
     describe('getRole', () => {
         it("Assigned Role", () => {
