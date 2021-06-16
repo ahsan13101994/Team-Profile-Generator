@@ -40,7 +40,7 @@ describe('Manager', () => {
         it("Manager's Office Number", () => {
             const manager = new Manager("John Wick", 3, "john.wick@hub.com", 5);
             
-            expect(manager.getOfficeNumber()).toEqual("5");
+            expect(manager.getOfficeNumber()).toEqual(5);
         })
     })
     

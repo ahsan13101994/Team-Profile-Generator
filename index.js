@@ -4,12 +4,12 @@ const Manager = require('./lib/Manager.js');
 const Engineer = require('./lib/Engineer.js');
 const Intern = require('./lib/Intern.js');
 const questions = require('./src/questions.js')
+const generateHTML = require('./src/generateHtml.js')
 
 let addMember = true
 let teamLeader
 let engineerTeam = []
 let internTeam = []
-let htmlStr
 
 async function getInquirer() {
     await inquirer
@@ -38,12 +38,8 @@ async function getInquirer() {
             }
         })
     
-    console.log(teamLeader)
-    console.log(engineerTeam)
-    console.log(internTeam)
+
 }
-
-
 
 
 function createHTMLFile() {
@@ -51,3 +47,10 @@ function createHTMLFile() {
 }
 
 getInquirer();
+
+async function init() {
+    await getInquirer();
+    const htmlStr = generateHTML(teamLeader, engineerTeam, internTeam);
+}
+
+init();
