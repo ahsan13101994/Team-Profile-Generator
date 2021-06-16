@@ -3,7 +3,7 @@
 This application is a Node command line application that takes in information about team members & employees and generates HTML page that displays team member roles.
 
 The live page can be viewed on GitHub Pages here: https://ahsan13101994.github.io/Team-Profile-Generator/dist/index.html
-Github Code: 
+ 
 
 ## Usage: 
 
@@ -26,6 +26,7 @@ use command: npm install inquirer & use command: npm install jest
 ## Tests
 
 use the command: npm test - To run the tests to see if they pass.
+
 use the command: node index - To fill the question prompts that will at the end generate Teams HTML webpage.
 
 ## Support
