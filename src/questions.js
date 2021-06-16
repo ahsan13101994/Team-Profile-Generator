@@ -64,7 +64,7 @@ const add_team_questions = [
         name: "choices",
         type: "list",
         message: "Add a team member: ",
-        choices: ["engineer", "intern", "N/A"]
+        choices: ["engineer", "intern", "Done adding Team Members"]
     }
 ]
 
